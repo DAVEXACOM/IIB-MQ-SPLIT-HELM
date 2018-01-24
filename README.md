@@ -1,6 +1,10 @@
+# Repository under construction
+
+This repository is a work in progress following on from the work in IIB-MQ. The plan is to use this reposity to deliver a HELM release into IBM Cloud Private Kubernetes service via Micro Services Builder such that one container is running IIB with Maven installed MQ Client and the other container is running the MQ Queue Manager. We will explore replicas and persistent volumes for load balancing and recovery
+
 # Origin
 
-this repository is a merge of the original ot4i/iibdocker and ibm-messaging/mq-docker repositories on github
+This repository is a merge of the original ot4i/iibdocker and ibm-messaging/mq-docker repositories on github
 
 # Overview
 
