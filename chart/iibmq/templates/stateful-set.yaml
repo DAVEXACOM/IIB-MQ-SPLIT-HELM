@@ -23,7 +23,7 @@ metadata:
     heritage: "{{ .Release.Service }}"
 spec:
   serviceName: {{ .Values.service.name }}
-  replicas: 1
+  replicas: 2
   updateStrategy:
     type: RollingUpdate
   template:
