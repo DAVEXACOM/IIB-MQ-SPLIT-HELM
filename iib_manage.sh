@@ -74,7 +74,10 @@ config()
     echo "----------------------------------------"
   fi
   strmqm ${MQ_QMGR_NAME}
-
+  # do this is a nice obvious place for now - enable client authorized connection
+  useradd davearno -G mqm && \
+    echo davearno:passw0rd | chpasswd
+  # and added the client auth to the dadefs.mqsc file   
   # Turn off script failing here because of listeners failing the script
   set +e
   for MQSC_FILE in $(ls -v /etc/mqm/*.mqsc); do
