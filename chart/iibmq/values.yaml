@@ -47,7 +47,7 @@ queueManager:
     # adminPassword sets the password of the admin user
     adminPassword: passw0rd
     # appPassword sets the password of the app user
-    appPassword: passw0rd
+    appPassword: 
 # iib section specifies settings for iib
 iib:
   iibnodename: icpnode1
