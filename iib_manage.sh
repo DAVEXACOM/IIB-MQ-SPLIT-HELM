@@ -150,7 +150,7 @@ start()
   	# mqsideploy $NODE_NAME -e $EXEC_NAME -a /etc/mqm/ICPDeploy.bar -m
 	# change to deploy all bar files
   	for BAR_FILE in $(ls -v /etc/mqm/*.bar); do
-	   mqsideploy $NODE_NAME -e $EXEC_NAME -a /etc/mqm/$BAR_FILE -m
+	   mqsideploy $NODE_NAME -e $EXEC_NAME -a $BAR_FILE -m
         done
 }
 
