@@ -14,7 +14,7 @@
 * limitations under the License.
 
 * Add a local queue
-DEFINE QLOCAL(DAQ1) REPLACE
+DEFINE QLOCAL(DAQA) REPLACE
 * Adding Client authorization
 DEFINE CHANNEL(PASSWORD.SVRCONN) CHLTYPE(SVRCONN) REPLACE
 SET CHLAUTH(PASSWORD.SVRCONN) TYPE(BLOCKUSER) USERLIST('nobody') DESCR('Allow privileged users on this channel')
