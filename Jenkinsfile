@@ -2,7 +2,7 @@
 
 @Library('MicroserviceBuilder') _
 microserviceBuilderPipeline {
-  image = 'iib10Smq9'
+  image = 'iib10mq9splt'
   mavenImage = 'wwdemo/images:maven-lab'
   chartFolder = 'chart/iibmq'
   deployBranch = 'master'
