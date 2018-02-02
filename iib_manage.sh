@@ -151,7 +151,7 @@ start()
 	# change to deploy all bar files
   	for BAR_FILE in $(ls -v /etc/mqm/*.bar); do
 	   echo "About to deploying bar file $BAR_FILE"
-	   mqsideploy ${NODE_NAME} -e ${EXEC_NAME} -a ${BAR_FILE} -m
+	   mqsideploy ${NODE_NAME} -e ${EXEC_NAME} -a ${BAR_FILE}
         done
 }
 
