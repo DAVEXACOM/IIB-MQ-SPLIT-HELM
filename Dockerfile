@@ -81,8 +81,8 @@ RUN chmod +x /usr/local/bin/*.sh
 #    curl http://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/integration/10.0.0.10-IIB-LINUX64-DEVELOPER.tar.gz \
 RUN mkdir /opt/ibm && \
     curl http://172.23.50.125:9080/iib10/10.0.0.11-IIB-LINUX64-DEVELOPER.tar.gz \
-    | tar zx --exclude iib-10.0.0.10/tools --directory /opt/ibm && \
-    /opt/ibm/iib-10.0.0.10/iib make registry global accept license silently
+    | tar zx --exclude iib-10.0.0.11/tools --directory /opt/ibm && \
+    /opt/ibm/iib-10.0.0.11/iib make registry global accept license silently
 
 # Configure system
 COPY kernel_settings.sh /tmp/
