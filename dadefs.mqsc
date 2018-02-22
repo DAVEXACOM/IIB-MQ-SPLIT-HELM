@@ -1,4 +1,4 @@
-﻿* © Copyright IBM Corporation 2015, 2017
+* � Copyright IBM Corporation 2015, 2017
 *
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,7 +15,7 @@
 
 * Add a local queue
 DEFINE QLOCAL(DAQA) REPLACE
-DEFINE QLOCAL(DAQB) REPLACE
+DEFINE QLOCAL(DAQC) REPLACE
 * Adding Client authorization
 DEFINE CHANNEL(PASSWORD.SVRCONN) CHLTYPE(SVRCONN) REPLACE
 SET CHLAUTH(PASSWORD.SVRCONN) TYPE(BLOCKUSER) USERLIST('nobody') DESCR('Allow privileged users on this channel')
