@@ -38,7 +38,7 @@ RUN rm -rf /var/lib/apt/lists/*
 
 RUN apt-get dist-upgrade -y
 
-#Install MQ
+# Install MQ
 
 #ARG MQ_URL=http://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/messaging/mqadv/mqadv_dev904_linux_x86-64.tar.gz
 ARG MQ_URL=http://172.23.50.125/mq9/mqadv_dev903_linux_x86-64.tar.gz
