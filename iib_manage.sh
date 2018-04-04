@@ -115,8 +115,10 @@ start()
 	if [ ${NODE_EXISTS} -ne 0 ]; then
     echo "----------------------------------------"
     echo "Node $NODE_NAME does not exist..."
-    echo "Creating node $NODE_NAME"
-		mqsicreatebroker $NODE_NAME
+#    echo "Creating node $NODE_NAME"
+#		mqsicreatebroker $NODE_NAME
+    echo "Creating node $NODE_NAME with queue manager $MQ_QMGR_NAME associated"
+		mqsicreatebroker $NODE_NAME -q $MQ_QMGR_NAME
 		mqsistart $NODE_NAME
 		mqsicreateexecutiongroup $NODE_NAME -e $EXEC_NAME
 		mqsistop $NODE_NAME
