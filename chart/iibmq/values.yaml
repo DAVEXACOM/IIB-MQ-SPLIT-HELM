@@ -2,7 +2,7 @@ license: "accept"
 
 image:
   # repository is the container repository to use, which must contain IBM MQ Advanced for Developers
-  repository: icpcluster.icp:8500/default/mq9iibLCda 
+  repository: icpcluster.icp:8500/default/mq9iiblcda 
   # tag is the tag to use for the container repository
   tag: latest
   # pullSecret is the secret to use when pulling the image from a private registry
