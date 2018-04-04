@@ -80,9 +80,13 @@ config()
   # and added the client auth to the dadefs.mqsc file   
   # Turn off script failing here because of listeners failing the script
   set +e
-  for MQSC_FILE in $(ls -v /etc/mqm/*.mqsc); do
+  #for MQSC_FILE in $(ls -v /etc/mqm/*.mqsc); do
+  #  runmqsc ${MQ_QMGR_NAME} < ${MQSC_FILE}
+  #done
+  for MQSC_FILE in $(ls -v /etc/mqm/${MQ_QMGR_NAME}.mqsc); do
     runmqsc ${MQ_QMGR_NAME} < ${MQSC_FILE}
   done
+  # Turn on script failing
   set -e
 
   echo "----------------------------------------"
